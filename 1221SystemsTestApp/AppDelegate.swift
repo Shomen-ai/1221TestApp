@@ -1,0 +1,22 @@
+//
+//  AppDelegate.swift
+//  1221SystemsTestApp
+//
+//  Created by Дмитрий Шайманов on 17.08.2023.
+//
+
+import UIKit
+
+@main
+class AppDelegate: UIResponder, UIApplicationDelegate {
+    var window: UIWindow?
+
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        window = UIWindow()
+        window?.rootViewController = MainTabBarController()
+        window?.makeKeyAndVisible()
+    
+        return true
+    }
+}
+
