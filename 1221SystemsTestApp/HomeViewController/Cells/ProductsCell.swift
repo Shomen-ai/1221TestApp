@@ -73,11 +73,9 @@ final class ProductsCollectionViewCell: UICollectionViewCell {
             buyButton.widthAnchor.constraint(equalToConstant: 40),
             buyButton.heightAnchor.constraint(equalToConstant: 40),
             
-//            productsTitle.topAnchor.constraint(equalTo: productsImage.bottomAnchor),
             productsTitle.leadingAnchor.constraint(equalTo: leadingAnchor),
             productsTitle.trailingAnchor.constraint(equalTo: buyButton.leadingAnchor, constant: -10),
             productsTitle.centerYAnchor.constraint(equalTo: buyButton.centerYAnchor)
-//            productsTitle.bottomAnchor.constraint(equalTo: bottomAnchor),
         ])
     }
     

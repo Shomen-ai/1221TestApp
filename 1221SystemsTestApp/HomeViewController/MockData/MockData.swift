@@ -1,12 +1,5 @@
 // MockData for app
 
-//case news ([ListItem])
-//case sales ([ListItem])
-//case bonus ([ListItem])
-//case options ([ListItem])
-//case recommendations ([ListItem])
-//case sweetMood ([ListItem])
-
 struct Mockdata {
     
     static let shared = Mockdata()

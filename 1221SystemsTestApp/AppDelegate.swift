@@ -1,10 +1,3 @@
-//
-//  AppDelegate.swift
-//  1221SystemsTestApp
-//
-//  Created by Дмитрий Шайманов on 17.08.2023.
-//
-
 import UIKit
 
 @main

@@ -1,7 +1,7 @@
 import UIKit
 
 final class MainTabBarController: UITabBarController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -15,12 +15,6 @@ final class MainTabBarController: UITabBarController {
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
         
-        // Настройте высоту таб-бара здесь
-        let newTabBarHeight: CGFloat = 250 // Новая высота таб-бара
-        var tabFrame = tabBar.frame
-        tabFrame.size.height = newTabBarHeight
-        tabFrame.origin.y = view.frame.size.height - newTabBarHeight
-        tabBar.frame = tabFrame
         tabBar.layer.shadowOffset = CGSize(width: 0, height: -5)
         tabBar.layer.shadowColor = UIColor.darkGray.cgColor
         tabBar.layer.shadowRadius = 0.5
@@ -57,13 +51,4 @@ final class MainTabBarController: UITabBarController {
         viewController.title = title
         return UINavigationController(rootViewController: viewController)
     }
-    
-//    private func setTabBarAppearance() {
-//        let height: CGFloat = 100
-//
-//        tabBar.itemWidth = tabBar.frame.width / 4
-//        tabBar.itemPositioning = .automatic
-//
-//
-//    }
 }
